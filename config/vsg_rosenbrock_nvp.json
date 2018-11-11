@@ -1,0 +1,50 @@
+{
+  "objective":
+  {
+   "name": "rosenbrock"
+  },
+
+  "algo":
+  {
+    "name": "vsg",
+    "optimizer":
+    {
+      "name": "adam",
+      "lr": 0.0005
+    }
+  },
+
+  "distribution":
+  {
+    "name": "nvp",
+    "invertible_network":
+    {
+      "depth": 4,
+      "width_network":
+      {
+        "hidden_sizes": [16, 16],
+        "hidden_facq": "sigmoid",
+        "output_facq": "linear",
+        "scale_output": true
+      },
+      "translation_network":
+      {
+        "hidden_sizes": [16, 16],
+        "hidden_facq": "sigmoid",
+        "output_facq": "linear",
+        "scale_output": true
+      }
+    }
+  },
+
+  "sampler":
+  {
+    "name": "plain",
+    "pop_size": 20
+  },
+
+
+  "max_eval_per_run": 50000,
+  "seeds": [0, 1000, 2000, 3000, 4000, 5000],
+  "dimensions": 10
+}

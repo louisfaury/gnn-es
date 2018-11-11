@@ -1,0 +1,32 @@
+{
+  "objective":
+  {
+    "name": "sphere"
+  },
+
+  "algo":
+  {
+    "name": "vsg",
+    "optimizer":
+    {
+      "name": "adam",
+      "lr": 0.001
+    }
+  },
+
+  "distribution":
+  {
+    "name": "gaussian"
+  },
+
+  "sampler":
+  {
+    "name": "plain",
+    "pop_size": 20
+  },
+
+
+  "max_eval_per_run": 50000,
+  "seeds": [0, 1000, 2000, 3000, 4000, 5000],
+  "dimensions": 10
+}

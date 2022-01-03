@@ -1,6 +1,6 @@
 # Generative Neural Networks for Randomized Optimization.
 
-This code is developed to experiments with invertible Generative Neural Networks in a randomized optimization setting, as proposed in ??.
+This code is developed to experiments with invertible Generative Neural Networks in a randomized optimization setting, as proposed in \[[1](https://dl.acm.org/doi/abs/10.1145/3319619.3326856), [2](https://arxiv.org/pdf/1901.11271.pdf)\]. 
 
 ## Code organization
 The code is organized as follows:
